@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LabQuiz</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class="header">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
       <h1 class="title">LabQuiz</h1>
       <p class="description">
-        Bem-vindo ao LabQuiz! Teste seus conhecimentos de HTML e CSS respondendo
+        Teste seus conhecimentos de HTML e CSS respondendo
         algumas perguntas.
       </p>
       <label class="playerName" for="playerName">Digite seu nome:</label>
@@ -24,6 +26,159 @@
       <br />
       <button class="startButton" type="button">Iniciar</button>
     </div>
-    <div class="questionsMain"></div>
+    <div class="questionsMain">
+      <div class="question">
+        <form action="">
+          <label for=""
+            ><strong>Pergunta 1</strong> - Como se define um estilo inline em HTML?</label>
+          <br>
+          <label for=""><strong>Resposta:</strong></label>
+          <input type="text" id="campo" name="campo" />
+        </div>
+        <br />
+
+        <div class="question">
+          <label for=""
+          ><strong>Pergunta 2</strong> - Qual é a tag usada para criar uma lista ordenada em
+          HTML?</label>
+          <br>
+          <label for=""><strong>Selecione a resposta:</strong></label>
+          <select id="response" name="response">
+            <option value="ol">ol</option>
+            <option value="ul">ul</option>
+            <option value="li">li</option>
+            <option value="order-list">order-list</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="question">
+          <label for=""
+          ><strong>Pergunta 3</strong> - Qual propriedade CSS é usada para alterar a cor do
+          texto?</label>
+          <br>
+          <label for=""><strong>Selecione a resposta:</strong></label>
+          <select id="type_response" name="type_response">
+            <option value="font-color">font-color</option>
+            <option value="color">color</option>
+            <option value="background-color">background-color</option>
+            <option value="text-color">text-color</option>
+          </select>
+        </div>
+
+        <br />
+
+        <div class="question">
+          <label for=""
+          ><strong>Pergunta 4</strong> - Como se referencia um arquivo CSS externo em um
+          documento HTML?</label>
+          <br>
+          <label for=""><strong>Resposta:</strong></label>
+          <input type="text" id="type_response" name="type_response" />
+          </div>
+          <br />
+
+          <div class="question">
+            <label for=""
+            ><strong>Pergunta 5</strong> - Font-size é a propriedade CSS usada para alterar o
+            tamanho da fonte de um texto?</label>
+            <br>
+            <label for=""><strong>Alternativa:</strong></label>
+            <label for="response_yes">Sim</label>
+            <input type="radio" id="response_yes" name="response" value="sim" />
+            
+            <label for="response_no">Não</label>
+            <input type="radio" id="response_no" name="response" value="nao" />
+          </div>
+          <br />
+
+        <div class="question">
+          <label for=""
+          ><strong>Pergunta 6</strong> - Qual é a propriedade CSS usada para definir a largura de
+          um elemento?</label>
+          <br>
+          <label for=""><strong>Alternativas:</strong></label>
+          <label for="height">Height</label>
+          <input type="checkbox" id="height" name="responses" value="height" />
+
+          <label for="size">Size</label>
+          <input type="checkbox" id="size" name="responses" value="size" />
+
+          <label for="width">Width</label>
+          <input type="checkbox" id="width" name="responses" value="width" />
+
+          <label for="max-width">Max-width</label>
+          <input
+            type="checkbox"
+            id="max-width"
+            name="responses"
+            value="max-width"
+          />
+          </div>
+          <br />
+
+        <div class="question">
+          <label for=""><strong>Pergunta 7</strong> - Como se cria um comentário em CSS?</label>
+          <br>
+          <label for=""><strong>Alternativas:</strong></label>
+          <label for="option1"> ←! → </label>
+         <input
+          type="checkbox"
+          id="option1"
+          name="responses"
+          value=""
+          />
+
+          <label for="option2">//</label>
+          <input type="checkbox" id="option2" name="responses" value="//" />
+
+          <label for="option3">/* */</label>
+          <input
+            type="checkbox"
+            id="option3"
+            name="responses"
+            value="/* */"
+          />
+        </div>
+        <br />
+
+        <div class="question">
+          <label for=""
+          ><strong>Pergunta 8</strong> - Qual é a propriedade CSS usada para definir a altura de
+          um elemento?</label>
+          <br>
+          <label for=""><strong>Alternativas:</strong></label>
+          <label for="height">Height</label>
+          <input type="checkbox" id="height" name="responses" value="height" />
+
+          <label for="size">Size</label>
+          <input type="checkbox" id="size" name="responses" value="size" />
+
+          <label for="min-height">Min-height</label>
+          <input
+            type="checkbox"
+            id="min-height"
+            name="responses"
+            value="min-height"
+          />
+
+          <label for="max-height">Max-height</label>
+          <input
+            type="checkbox"
+            id="max-height"
+            name="responses"
+            value="max-height"
+          />
+        </div>
+      </form>
+    </div>
+    <footer class="footer">
+    Created by Gustavo Dambros - 2024
+    <nav>
+      <a href="https://www.instagram.com/gustavobdambros/" target="_blank"><i class="bx bxl-instagram"></i>Instagram</a>
+      <a href="https://github.com/gustavobdambros" target="_blank"><i class="bx bxl-github"></i>GitHub</a>
+      <a href="https://www.linkedin.com/in/gustavo-bonamigo-dambros-0749a1222/" target="_blank"><i class="bx bxl-linkedin"></i> LinkedIn</a>
+    </nav>
+  </footer>
   </body>
 </html>

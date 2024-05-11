@@ -21,19 +21,18 @@
 
 .description {
   font-size: 24px;
-  color: #272727;
+  color: #efffff;
 }
 
 .playerName {
-  margin-top: 5px;
+  margin-top: 15px;
   font-size: 24px;
-  color: white;
+  color: #efffff;
 }
 
 .inputName {
   text-align: center;
   font-size: 15px;
-  margin-top: 15px;
   height: 30px;
   width: 200px;
   border: 2px solid #569fa7;
@@ -47,10 +46,10 @@
 .startButton {
   height: 30px;
   width: 80px;
-  margin-bottom: 10px;
   border: 3px solid #569fa7;
   border-radius: 3px;
   font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .startButton::placeholder {
@@ -59,4 +58,39 @@
 
 .startButton:hover {
   background: #b4edf4;
+}
+
+.questionsMain {
+  background-color: #edf5ec;
+  height: 68vh;
+  width: 100vw;
+  padding: 5px 65px;
+}
+
+.question {
+  color: #1d4b52;
+  font-size: 18px;
+  text-align: left;
+}
+
+.question input:focus {
+  border: 2.5px solid #1d4b52;
+  outline: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: #1d4b52;
+  color: #efffff;
+  padding: 0.7em 4em;
+  display: flex;
+  justify-content: space-between;
+  border-top: 4.5px solid var(--green4);
+}
+
+.footer a {
+  color: #efffff;
+  padding: 0 1.5em;
 }
